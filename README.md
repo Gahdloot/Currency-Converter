@@ -11,5 +11,5 @@ A currency converter built on all level of difficulty, from the easiest way to t
     Building a currency converter using class and objects
 
 ##Level 3:
-    Using Webscrapping 
+    Using Webscrapping.
 

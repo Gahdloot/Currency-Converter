@@ -47,5 +47,5 @@ def converter():
     p = o / conv.get(cc)
     print(f'you have {p}{cc}')
 
-# run the Function
+# run the Function.
 converter()

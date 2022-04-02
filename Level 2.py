@@ -54,4 +54,4 @@ usdngn = currency('usd', 'ngh')
 print(usdngn)
 usdngn.convert()
 
-# all others can be tried
+# all others can be tried.
