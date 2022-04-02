@@ -49,7 +49,7 @@ class currency:
             print('figure should be a number')
 
 
-usdngn = currency('usd', 'ngh')
+usdngn = currency('usd', 'ngn')
 
 print(usdngn)
 usdngn.convert()
