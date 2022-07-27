@@ -14,7 +14,7 @@ Currencylist = ['usd', 'pounds', 'euro', 'ngn']
 
 
 # request for first value
-r = input('enter currency to convert From e.g (usd, pounds, euro, ngn) : ').lower()
+intial_currency = input('enter currency to convert From e.g (usd, pounds, euro, ngn) : ').lower()
 
 
 # Open a dictionary where you can equate each list to input
@@ -26,26 +26,31 @@ conv = {
 }
 
 # Conditionals to ensure input is from the list
-while r not in Currencylist :
+while intial_currency not in Currencylist :
     print('invalid input !!!')
-    r = input('enter currency to convert e.g (usd, pounds, euro, ngn) : ').lower()
+    intial_currency = input('enter currency to convert e.g (usd, pounds, euro, ngn) : ').lower()
 
 # request for Second  value
-cc = input('enter currency to convert to e.g (usd, pounds, euro, ngn) : ').lower()
+values_to_convert_to = input('enter currency to convert to e.g (usd, pounds, euro, ngn) : ').lower()
 
 # Conditionals to ensure input is from the list
-while cc not in Currencylist :
+while values_to_convert_to not in Currencylist :
     print('invalid input !!!')
-    cc = input('enter currency to convert to e.g (usd, pounds, euro, ngn) : ').lower()
+    values_to_convert_to = input('enter currency to convert to e.g (usd, pounds, euro, ngn) : ').lower()
 
-g = int(input('enter figure to convert : '))
+amount = int(input('enter figure to convert : '))
 
 
 # function that converts the list
-def converter():
-    o = conv.get(r) * g
-    p = o / conv.get(cc)
-    print(f'you have {p}{cc}')
+def converter(intial_currency, amount, values_to_convert_to):
+    if type(intial_currency) is str:
+        o = conv.get(intial_currency) * amount
+        p = o / conv.get(values_to_convert_to)
+        return p
+    elif type(intial_currency) is int:
+        o = intial_currency * amount
+        p = o / values_to_convert_to
+        return p
 
 # run the Function.
 converter()
