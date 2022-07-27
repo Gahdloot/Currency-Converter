@@ -52,5 +52,6 @@ def converter(intial_currency, amount, values_to_convert_to):
         p = o / values_to_convert_to
         return p
 
+
 # run the Function.
-converter()
+converter(intial_currency, amount, values_to_convert_to)
