@@ -11,8 +11,8 @@ class test_currency(unittest.TestCase):
 
     def test_convert_level2(self):
         value_difference = currency('usd', 'ngn')
-
-        self.assertEqual(value_difference.convert(), 417)
+        converted_value = value_difference.convert()
+        self.assertEqual(converted_value, 417)
 
 
 
