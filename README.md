@@ -8,7 +8,7 @@ A currency converter built on all level of difficulty, from the easiest way to t
 
 
 ##Level 2:
-    Building a currency converter using class and objects
+    Building a currency converter using Object oriented Programming
 
 ##Level 3:
     Using Api's .
